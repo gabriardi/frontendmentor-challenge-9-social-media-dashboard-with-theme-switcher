@@ -1,0 +1,19 @@
+$color-primary-red: hsl(356, 69%, 56%);
+$color-primary-green: hsl(163, 72%, 41%);
+
+.changeUp {
+  color: $color-primary-green;
+}
+
+.changeDown {
+  color: $color-primary-red;
+}
+
+.change {
+  display: flex;
+  align-items: center;
+  span {
+    font-weight: bold;
+    margin-left: 0.6rem;
+  }
+}

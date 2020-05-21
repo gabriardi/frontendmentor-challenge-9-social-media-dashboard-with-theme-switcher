@@ -1,0 +1,34 @@
+.OverviewCard {
+  cursor: pointer;
+
+  background-color: var(--color-card-bg);
+  transition: all 0.3s;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  border-radius: 0.5rem;
+
+  padding: 3rem;
+
+  &:hover {
+    background-color: var(--color-card-bg--hover);
+  }
+
+  &__description {
+    font-weight: bold;
+    color: var(--color-text-secondary);
+  }
+  &__icon,
+  &__change {
+    justify-self: end;
+  }
+  &__change {
+    align-self: end;
+    line-height: 1.5;
+  }
+  &__number {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--color-text-primary);
+  }
+}

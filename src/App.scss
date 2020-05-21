@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media only screen and (max-width: 23em) {
+    font-size: 50%;
+  }
+  @media only screen and (min-width: 100em) {
+    font-size: 75%;
+  }
+}
+
+::selection {
+  background-color: var(--color-select-bg);
+  color: var(--color-select-text);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  background-color: var(--color-bg);
+  transition: all 0.3s;
+}
+
+.dashboardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 2.5rem;
+
+  padding: 2rem 5%;
+}

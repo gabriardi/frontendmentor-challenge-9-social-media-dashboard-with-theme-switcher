@@ -1,0 +1,41 @@
+.Header {
+  margin-bottom: -13rem;
+
+  transition: all 0.3s;
+  background-color: var(--color-header-bg);
+
+  padding: 3rem 5%;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+
+  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-content: start;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 44em) {
+    grid-template-columns: 1fr;
+    margin-bottom: -7rem;
+  }
+
+  &__Text {
+    p {
+      color: var(--color-text-secondary);
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    h1 {
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+    hr {
+      display: none;
+      border: 1px solid var(--color-text-secondary);
+      margin: 2.5rem 0;
+      @media only screen and (max-width: 44em) {
+        display: block;
+      }
+    }
+  }
+}
