@@ -2,8 +2,8 @@ import React from 'react';
 import './App.scss';
 
 import Header from './components/Header';
-import Dashboard from './components/Dashboard';
-import OverviewToday from './components/OverviewToday';
+import DashboardSummary from './components/Dashboard/DashboardSummary';
+import DashboardOverview from './components/Dashboard/DashboardOverview';
 import Attribution from './components/Attribution';
 import Container from './components/Container';
 
@@ -12,8 +12,8 @@ function App() {
     <div>
       <Container>
         <Header />
-        <Dashboard />
-        <OverviewToday />
+        <DashboardSummary />
+        <DashboardOverview />
       </Container>
       <Attribution />
     </div>

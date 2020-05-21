@@ -1,17 +1,21 @@
 import React from 'react';
 
-import FacebookIcon from '../SocialIcons/FacebookIcon';
-import InstagramIcon from '../SocialIcons/InstagramIcon';
-import TwitterIcon from '../SocialIcons/TwitterIcon';
-import YoutubeIcon from '../SocialIcons/YoutubeIcon';
+import FacebookIcon from '../../SocialIcons/FacebookIcon';
+import InstagramIcon from '../../SocialIcons/InstagramIcon';
+import TwitterIcon from '../../SocialIcons/TwitterIcon';
+import YoutubeIcon from '../../SocialIcons/YoutubeIcon';
 
-import Card from '../Card';
-import styles from './Dashboard.module.scss';
+import CardSummary from '../../Card/CardSummary';
 
-const Dashboard = () => {
+import styles from './DashboardSummary.module.scss';
+import commonStyles from '../DashboardContainer.module.scss';
+
+const DashboardSummary = () => {
   return (
-    <div className={`${styles.Dashboard} dashboardContainer`}>
-      <Card
+    <div
+      className={`${styles.DashboardSummary} ${commonStyles.DashboardContainer}`}
+    >
+      <CardSummary
         socialMedia="facebook"
         SocialMediaIcon={FacebookIcon}
         socialName="@nathanf"
@@ -19,7 +23,7 @@ const Dashboard = () => {
         description="followers"
         changeNumber={12}
       />
-      <Card
+      <CardSummary
         socialMedia="twitter"
         SocialMediaIcon={TwitterIcon}
         socialName="@nathanf"
@@ -27,7 +31,7 @@ const Dashboard = () => {
         description="followers"
         changeNumber={99}
       />
-      <Card
+      <CardSummary
         socialMedia="instagram"
         SocialMediaIcon={InstagramIcon}
         socialName="@realnathanf"
@@ -35,7 +39,7 @@ const Dashboard = () => {
         description="followers"
         changeNumber={1099}
       />
-      <Card
+      <CardSummary
         socialMedia="youtube"
         SocialMediaIcon={YoutubeIcon}
         socialName="Nathan F."
@@ -47,4 +51,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default DashboardSummary;

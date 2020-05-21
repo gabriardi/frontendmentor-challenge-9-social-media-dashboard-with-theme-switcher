@@ -1,60 +1,63 @@
 import React from 'react';
 
-import styles from './OverviewToday.module.scss';
+import styles from './DashboardOverview.module.scss';
+import commonStyles from '../DashboardContainer.module.scss';
 
-import OverviewCard from '../OverviewCard';
-import FacebookIcon from '../SocialIcons/FacebookIcon';
-import InstagramIcon from '../SocialIcons/InstagramIcon';
-import TwitterIcon from '../SocialIcons/TwitterIcon';
-import YoutubeIcon from '../SocialIcons/YoutubeIcon';
+import CardOverview from '../../Card/CardOverview';
+import FacebookIcon from '../../SocialIcons/FacebookIcon';
+import InstagramIcon from '../../SocialIcons/InstagramIcon';
+import TwitterIcon from '../../SocialIcons/TwitterIcon';
+import YoutubeIcon from '../../SocialIcons/YoutubeIcon';
 
-const OverviewToday = () => {
+const DashboardOverview = () => {
   return (
-    <div className={`${styles.OverviewToday} dashboardContainer`}>
-      <h2 className={styles.OverviewToday__title}>Overview - Today</h2>
-      <OverviewCard
+    <div
+      className={`${styles.DashboardOverview} ${commonStyles.DashboardContainer}`}
+    >
+      <h2 className={styles.DashboardOverview__title}>Overview - Today</h2>
+      <CardOverview
         description="Page Views"
         SocialMediaIcon={FacebookIcon}
         number="87"
         changeNumber={3}
       />
-      <OverviewCard
+      <CardOverview
         description="Likes"
         SocialMediaIcon={FacebookIcon}
         number="52"
         changeNumber={-2}
       />
-      <OverviewCard
+      <CardOverview
         description="Likes"
         SocialMediaIcon={InstagramIcon}
         number="5462"
         changeNumber={2257}
       />
-      <OverviewCard
+      <CardOverview
         description="Profile Views"
         SocialMediaIcon={InstagramIcon}
         number="87"
         changeNumber={1375}
       />
-      <OverviewCard
+      <CardOverview
         description="Retweets"
         SocialMediaIcon={TwitterIcon}
         number="117"
         changeNumber={303}
       />
-      <OverviewCard
+      <CardOverview
         description="Likes"
         SocialMediaIcon={TwitterIcon}
         number="507"
         changeNumber={553}
       />
-      <OverviewCard
+      <CardOverview
         description="Likes"
         SocialMediaIcon={YoutubeIcon}
         number="107"
         changeNumber={-19}
       />
-      <OverviewCard
+      <CardOverview
         description="Total Views"
         SocialMediaIcon={YoutubeIcon}
         number="1407"
@@ -64,4 +67,4 @@ const OverviewToday = () => {
   );
 };
 
-export default OverviewToday;
+export default DashboardOverview;

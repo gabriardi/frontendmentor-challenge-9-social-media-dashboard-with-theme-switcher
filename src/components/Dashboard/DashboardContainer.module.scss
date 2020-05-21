@@ -1,0 +1,8 @@
+.DashboardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 2.5rem;
+
+  padding: 2rem 5%;
+}

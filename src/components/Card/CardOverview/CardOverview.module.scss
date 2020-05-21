@@ -1,18 +1,6 @@
-.OverviewCard {
-  cursor: pointer;
-
-  background-color: var(--color-card-bg);
-  transition: all 0.3s;
-  display: grid;
+.CardOverview {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 2rem;
-  border-radius: 0.5rem;
-
-  padding: 3rem;
-
-  &:hover {
-    background-color: var(--color-card-bg--hover);
-  }
 
   &__description {
     font-weight: bold;

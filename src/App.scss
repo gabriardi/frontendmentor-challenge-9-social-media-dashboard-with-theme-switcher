@@ -17,11 +17,6 @@ html {
   }
 }
 
-::selection {
-  background-color: var(--color-select-bg);
-  color: var(--color-select-text);
-}
-
 body {
   font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
@@ -29,11 +24,7 @@ body {
   transition: all 0.3s;
 }
 
-.dashboardContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  column-gap: 3rem;
-  row-gap: 2.5rem;
-
-  padding: 2rem 5%;
+::selection {
+  background-color: var(--color-select-bg);
+  color: var(--color-select-text);
 }
