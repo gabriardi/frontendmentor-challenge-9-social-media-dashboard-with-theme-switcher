@@ -1,7 +1,7 @@
 import React from 'react';
 
 const InstagramIcon = () => {
-  const uniqueId = `a${Date.now()}`;
+  const uniqueId = `a${Math.floor(Date.now() * Math.random())}`;
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
