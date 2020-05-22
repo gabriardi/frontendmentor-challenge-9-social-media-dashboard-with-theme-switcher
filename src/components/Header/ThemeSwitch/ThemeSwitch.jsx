@@ -5,7 +5,7 @@ import { lightTheme, darkTheme } from '../../../Themes/themes';
 import styles from './ThemeSwitch.module.scss';
 
 const ThemeSwitch = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   const handleCheckbox = () => {
     setIsDark((prev) => !prev);

@@ -38,7 +38,6 @@
   right: 0;
   bottom: 0;
   background-color: #aeb2cc;
-  transition: 0.4s;
 }
 
 .slider:before {
@@ -53,7 +52,11 @@
   background-color: var(--color-header-bg);
 }
 
-input:checked + .slider {
+input:not(:checked) + .slider {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.slider:hover {
   background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
